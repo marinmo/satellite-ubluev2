@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
-name: marinmo/satellite-ubluev2
+name: satellite-ubluev2
 # description will be included in the image's metadata
-description: satellite-ubluev2
+description: second version of ublue for my laptop
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/silverblue-main
@@ -31,7 +31,6 @@ modules:
       - tmux
       - virt-manager
       - weechat
-      - python3-pip
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
