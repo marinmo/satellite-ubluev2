@@ -48,19 +48,19 @@ modules:
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
-      - org.libreoffice.LibreOffice
-      - com.borgbase.Vorta
-      - org.gustavoperedo.FontDownloader
-      - com.github.tchx84.Flatseal
-      - com.calibre_ebook.calibre
-      - com.github.Eloston.UngoogledChromium
-      - com.spotify.Client
-      - org.gimp.GIMP
-      - org.gtk.Gtk3theme.Adwaita-dark
-      - eu.betterbird.Betterbird
-      - ca.desrt.dconf-editor
-      - app.getclipboard.Clipboard
-      - com.mattjakeman.ExtensionManager
+      - LibreOffice: org.libreoffice.LibreOffice
+      - Vorta: com.borgbase.Vorta
+      - FontDownloader: org.gustavoperedo.FontDownloader
+      - Flatseal: com.github.tchx84.Flatseal
+      - Calibre: com.calibre_ebook.calibre
+      - Ungoogled-Chromium: com.github.Eloston.UngoogledChromium
+      - Spotify: com.spotify.Client
+      - GIMP: org.gimp.GIMP
+      - Adwaita-dark: org.gtk.Gtk3theme.Adwaita-dark
+      - Betterbird: eu.betterbird.Betterbird
+      - dconf-editor: ca.desrt.dconf-editor
+      - Clipboard: app.getclipboard.Clipboard
+      - ExtensionManager: com.mattjakeman.ExtensionManager
       
   - type: script
     scripts:
