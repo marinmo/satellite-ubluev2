@@ -60,8 +60,9 @@ modules:
       - Adwaita-dark: org.gtk.Gtk3theme.Adwaita-dark
       - Betterbird: eu.betterbird.Betterbird
       - dconf-editor: ca.desrt.dconf-editor
-      - Clipboard: app.getclipboard.Clipboard
       - ExtensionManager: com.mattjakeman.ExtensionManager
+      - mpv: io.mpv.Mpv
+      - darktable: org.darktable.Darktable
       
   - type: script
     scripts:
