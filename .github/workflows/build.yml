@@ -1,4 +1,5 @@
 # This workflow builds every branch of the repository daily at 20:22 UTC, one hour after ublue-os/nvidia builds.
+# ^^ this is not true anymore
 # The images are also built after pushuing changes or pull requests.
 # The builds can also be triggered manually in the Actions tab thanks to workflow dispatch.
 # Only the branch called `live` is published.
@@ -7,7 +8,7 @@
 name: build-ublue
 on: # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
   schedule:
-    - cron: "20 22 * * *"
+    - cron: "0 16 * * *" # an hour after main builds, should be enough for them to catch and correct errors
   push:
     branches:
       - live
